@@ -1,0 +1,78 @@
+@media (max-width:1023px) {
+    /*Header*/
+
+    .encabezado {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .encabezado .boton {
+        display: none;
+    }
+
+    /*Banner*/
+
+    .bannerContenido p {
+        font-size: 2.5rem;
+    }
+
+    /*Biblioteca*/
+    .fondoBiblioteca p {
+        font-size: 2.5rem;
+    }
+
+
+    .biblioteca {
+        background-image: url(../img/Logofondo.png);
+        margin: 5vh;
+        font-size: 2rem;
+    }
+
+    .biblioteca h3,
+    .biblioteca p {
+        font-size: inherit;
+    }
+
+    .contenedorBiblioteca {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*Autor*/
+
+    .contenedorRecomendacion {
+        flex-direction: column;
+    }
+
+    /*Ubicación*/
+
+     .ubicacionMapa{
+        font: 2.5rem;
+        flex-direction: column;
+     }
+      .contenedorUbicacion{
+        font-size: 2.5rem;
+        flex-direction: column;
+    }
+
+
+    /*Footer*/
+
+    .footerContenido {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/*Vista Movil*/
+
+
+@media (max-width:768px) {
+    /*Biblioteca */
+
+    .contenedorBiblioteca {
+        grid-template-columns: 1fr;
+    }
+
+    
+}

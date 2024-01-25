@@ -1,0 +1,499 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #afa7a7;
+}
+
+.imgLogo {
+  width: 100px;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  box-shadow: 0px 2px 4px rgba(75, 75, 75, 0.5);
+}
+.encabezado h1 {
+  text-transform: uppercase;
+  font-weight: 700px;
+  color: rgb(235, 233, 233);
+  text-shadow: 1px 1px 1px #606c38;
+  font-size: 1.9rem;
+}
+
+.violeta {
+  color: #4E4E80;
+  text-shadow: 1px 1px 1px rgb(194, 192, 192);
+}
+
+.lillac {
+  color: #E9CCEC;
+}
+
+.boton {
+  background-color: #afa7a7;
+  color: #4E4E80;
+  font-weight: 700;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+}
+.boton:hover {
+  background-color: #afa7a7;
+  color: #FAFAFA;
+  cursor: pointer;
+}
+
+.encabezado li {
+  list-style-type: none;
+  display: inline-block;
+}
+.encabezado li a {
+  text-decoration: none;
+  color: rgb(235, 233, 233);
+  margin: 10px;
+  font-weight: 800px;
+  text-shadow: 1px 1px 1px #606c38;
+  font-size: 1.5rem;
+}
+.encabezado li a:hover {
+  color: #afa7a7;
+}
+
+.banner {
+  background-image: url("../img/banner.png");
+  height: calc(100vh - 100px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
+
+.bannerContenido {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.bannerContenido h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff7f7;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.bannerContenido p {
+  color: #fff7f7;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  margin-top: 15%;
+  margin-bottom: 10%;
+  text-align: center;
+}
+.bannerContenido .boton {
+  color: #ffffff;
+  width: 150px;
+  height: 60px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin: auto;
+  cursor: pointer;
+  text-align: center;
+  background: #4E4E80;
+  background: -moz-linear-gradient(top, #4E4E80 0%, #E9CCEC 80%);
+  box-shadow: inset 0px 0px 6px #fff;
+  border: 1px solid #4E4E80;
+  border-radius: 10px;
+}
+
+.fondo {
+  background-image: url("../img/Fin.png");
+  height: calc(100vh - 100px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fondo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
+
+.fondoBiblioteca {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #fff7f7;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.fondoBiblioteca.boton {
+  margin-top: 10px;
+}
+
+.biblioteca {
+  text-align: center;
+  margin: 10vh;
+  border-bottom: 1px solid black;
+}
+
+.bannerBiblioteca p {
+  color: #fff7f7;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.biblioteca h3 {
+  color: #afa7a7;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+.biblioteca p {
+  font-size: 4rem;
+  color: #212121;
+  padding: 10px;
+}
+
+.contenedorBiblioteca {
+  background-image: url(../img/FondoBib.jpg);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.biblioteca {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+.tarjeta img {
+  max-width: 100%;
+}
+.tarjeta p {
+  margin: 10px 0;
+}
+.tarjeta button {
+  background-color: #afa7a7;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.tarjeta button:hover {
+  background-color: #afa7a7;
+}
+
+.autor {
+  background-image: url("../img/fondorec.png");
+  height: calc(100vh - 100px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.autor::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
+
+.autorRecomendacion {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #fff7f7;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.autorRecomendacion.boton {
+  margin-top: 10px;
+}
+
+.contenedorRecomendacion {
+  display: flex;
+  margin: 10vh;
+}
+
+.footer {
+  background-color: #212121;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footerContenido {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.infoContacto p {
+  margin: 5px 0;
+  font-size: 1.2rem;
+}
+
+.redesSociales a {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  color: #afa7a7;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+.redesSociales a:hover {
+  color: #afa7a7;
+}
+
+.footer i {
+  margin-right: 10px;
+}
+
+.baner {
+  background-image: url("../img/baner.png");
+  height: calc(100vh - 100px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.baner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
+
+.banerContacto {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #fff7f7;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.banerContacto.boton {
+  margin-top: 10px;
+}
+
+.contenedorContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #afa7a7;
+  border: 1px;
+  padding: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 1%;
+}
+
+.tarjetax {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #afa7a7;
+  border: 1px solid #afa7a7;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+
+.contenedorContacto img {
+  max-width: 43%;
+}
+
+.mapa {
+  background-image: url("../img/ubicacion.png");
+  height: calc(100vh - 100px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mapa::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
+
+.ubicacionMapa {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #fff7f7;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contenedorUbicacion {
+  color: #fff7f7;
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgb(235, 233, 233);
+  font-size: 3rem;
+  display: center;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+@media (max-width: 1023px) {
+  /*Header*/
+  .encabezado {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+  .encabezado .boton {
+    display: none;
+  }
+  /*Banner*/
+  .bannerContenido p {
+    font-size: 2.5rem;
+  }
+  /*Biblioteca*/
+  .fondoBiblioteca p {
+    font-size: 2.5rem;
+  }
+  .biblioteca {
+    background-image: url(../img/Logofondo.png);
+    margin: 5vh;
+    font-size: 2rem;
+  }
+  .biblioteca h3,
+  .biblioteca p {
+    font-size: inherit;
+  }
+  .contenedorBiblioteca {
+    grid-template-columns: 1fr 1fr;
+  }
+  /*Autor*/
+  .contenedorRecomendacion {
+    flex-direction: column;
+  }
+  /*Ubicación*/
+  .ubicacionMapa {
+    font: 2.5rem;
+    flex-direction: column;
+  }
+  .contenedorUbicacion {
+    font-size: 2.5rem;
+    flex-direction: column;
+  }
+  /*Footer*/
+  .footerContenido {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/*Vista Movil*/
+@media (max-width: 768px) {
+  /*Biblioteca */
+  .contenedorBiblioteca {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

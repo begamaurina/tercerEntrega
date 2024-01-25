@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabelBiblioteca</title>
+    <!-- CSS BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<!-- Header con NavBarBS-->
+
+<body class="container-fluid">
+    <header class="navbar navbar-expand-lg encabezado">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="imgLogo" src="../img/Logo.png" alt="Logo BabelBiblioteca">
+            </a>
+            <h1>Babel<span class="violeta">Biblioteca Infinita</span></h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto menuNav">
+
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="biblioteca.html">Biblioteca</a></li>
+                        <li><a href="recomendaciones.html">Autor del Mes</a></li>
+                        <li><a href="ubicacion.html">Ubicación</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+
+                    </ul>
+            </nav>
+
+            <button class="boton">BabelBoot</button>
+    </header>
+
+
+    <!--Ubicación-->
+    <section id="ubicacion" class="mapa">
+        <div class="ubicacionMapa">
+            <p>¿Dónde <span class="violeta"> Encontrarnos? </span></p>
+        </div>
+    </section>
+
+
+    <div class="contenedorUbicacion ">
+        <p>San telmo n°<span class="lillac">888</span></p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6716309.123923281!2d-64.53531757560432!3d-34.71910497068613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb9697037cd7%3A0xe502a639a43bca3b!2sBabel!5e0!3m2!1ses-419!2sar!4v1704768121249!5m2!1ses-419!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Footer -->
+
+    <footer id=contacto class="footer">
+        <div class="footerContenido">
+            <div class="infoContacto">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Dirección: San telmo, 888</p>
+                <p><i class="fas fa-phone"></i> Teléfono: +11 888 888</p>
+                <p><i class="fas fa-envelope"></i> Email: babel@bibliotecainfinita.com</p>
+            </div>
+            <div class="redesSociales">
+                <h4>Redes Sociales</h4>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac484d389e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

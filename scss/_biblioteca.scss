@@ -1,0 +1,118 @@
+.fondo {
+    background-image: url("../img/Fin.png");
+    height: calc(100vh - 100px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+      z-index: 0;
+    }
+  }
+  
+  .fondoBiblioteca {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #fff7f7;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+  
+    &.boton {
+      margin-top: 10px;
+    }
+  }
+  
+  .biblioteca {
+    text-align: center;
+    margin: 10vh;
+    border-bottom: 1px solid black;
+  }
+  
+  .bannerBiblioteca p {
+    color: #fff7f7;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .biblioteca {
+    h3 {
+      color: $color-cremita;
+      text-transform: uppercase;
+      font-size: 3rem;
+    }
+  
+    p {
+      font-size: 4rem;
+      color: #212121;
+      padding: 10px;
+    }
+  }
+  
+  .contenedorBiblioteca {
+    background-image: url(../img/FondoBib.jpg);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .biblioteca {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+  
+    img {
+      max-width: 100%;
+    }
+  
+    p {
+      margin: 10px 0;
+    }
+  
+    button {
+      background-color: $color-cremita;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 10px;
+  
+      &:hover {
+        background-color:$color-cremita;
+      }
+    }
+  }
+  
